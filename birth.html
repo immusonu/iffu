@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Birthday wishes from iftheqar</h1>
+        <p>Dear <span id="name">[Name]</span>,</p>
+        <p>Wishing you a day filled with love, laughter, and joy!</p>
+        <form>
+            <label for="username">Enter your name:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+            <button type="button" onclick="submitName()">Send Wish</button>
+        </form>
+        <p id="greeting"></p>
+        <p>Click <a href="file:///C:/Users/sonu/.aws/bdayy.html">here</a> to go back.</p>
+    </div>
+
+    <script>
+        function submitName() {
+            var name = document.getElementById("username").value;
+            document.getElementById("name").innerText = name;
+            document.getElementById("greeting").innerText = "Happy Birthday Dear, " + name + "!";
+        }
+    </script>
+</body>
+</html>
